@@ -37,12 +37,16 @@ def create_app() -> Flask:
         page = max(1, int(request.args.get("page", 1)))
         search = request.args.get("search", "").strip()
         pages = 1
+        page_items = []
         if session.get("user_id"):
             data = list_tasks(session["user_id"], search=search, page=page)
             tasks = data["items"]
             summary = data["summary"]
             page = data["page"]
             pages = data["pages"]
+            start = max(1, page - 2)
+            end = min(pages, page + 2)
+            page_items = list(range(start, end + 1))
         return render_template(
             "dashboard.html",
             tasks=tasks,
@@ -52,6 +56,7 @@ def create_app() -> Flask:
             current_page=page,
             total_pages=pages,
             search_query=search,
+            page_items=page_items,
         )
 
     @app.post("/api/register")

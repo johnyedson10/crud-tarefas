@@ -127,6 +127,35 @@ body {
   color: white;
 }
 
+.action-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.4rem;
+  min-height: 2.4rem;
+}
+
+.pager-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.4rem;
+  min-height: 2.4rem;
+}
+
+.pager-active {
+  background: rgba(34, 211, 238, 0.18);
+  border-color: rgba(34, 211, 238, 0.35);
+  color: rgb(103 232 249);
+}
+
+.icon-action,
+.icon-pager {
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+}
+
 .status {
   display: inline-flex;
   border-radius: 999px;
