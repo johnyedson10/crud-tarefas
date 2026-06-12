@@ -1,6 +1,6 @@
 ## Projeto Crud de Tarefas
 
-## Precisa colocar a chade de conexão no .env
+## Precisa colocar a chave de conexão no .env
 - dentro do diretório
 ```
 app\api\.env

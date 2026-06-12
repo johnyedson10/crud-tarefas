@@ -1,7 +1,7 @@
 ## 1. Usar NeonDB
     conexão com o banco online string já está no .env
 
-## 2. Python Flsak Estrutura para seguir
+## 2. Python Flask Estrutura para seguir
  api,
  web,
  test,
@@ -19,7 +19,7 @@
     Motion animação
     Icones Font Awesome
  
-## 3. criar uma telas
+## 3. criar  telas
 
  ### login
     Email e senha
